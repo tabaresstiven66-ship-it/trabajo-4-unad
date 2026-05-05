@@ -236,8 +236,8 @@ if __name__ == "__main__":
     try:
         r1.confirmar()
         print("Pago:", r1.pagar())
-    except:
-        print("Error en reserva")
+    except:Exception as e:
+        print(f"Error en reserva:"{e})
 
     # 8 error cliente
     sistema.crear_reserva("falso", s1, 2)
